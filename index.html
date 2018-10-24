@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PPC</title>
+  <style>
+      canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+}            
+
+p {
+    text-align:center;
+    font-family:'Arial';
+    font-size: larger;
+    font-style: oblique;
+    font-weight: bold;
+    }
+    </style>
+  </head>
+  <body>     
+    <div>
+      <p>City Simulator</p>
+    </div>
+    <canvas id="myCanvas" width="800" height="800" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+    <script>
+            /************
+            * CREATING OBJECTS 
+            *************/
+
+            var Tile = function(x, y, colour) {
+              this.x = x;
+              this.y = y;
+              this.colour = colour;
+            };
+
+            Tile.prototype.draw = function() {
+              ctx.beginPath();
+              ctx.strokeStyle="black";
+              ctx.lineWidth="2";
+              ctx.rect(this.x, this.y, 20, 20);
+              ctx.stroke();
+              ctx.fillStyle = this.colour;
+              ctx.fill();
+            };
+
+
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            var groundColour = ["rgb(204, 153, 0)","rgb(102, 153, 0)"];
+
+            /**************
+            *  MAIN PROGRAM
+            ***************/
+
+            var tiles = [];
+
+            var tempColour;
+
+            for (var i = 0; i < 800; i += 20) {
+                for (var j = 0; j < 800; j += 20) {
+
+                    tempColour = groundColour[Math.floor(Math.random() * 2)];
+                    tiles.push(
+                      new Tile(i, j, tempColour)
+                    );
+
+                    tiles[tiles.length - 1].draw();
+
+
+                }   
+            }
+
+</script>
+  </body>
+</html>
