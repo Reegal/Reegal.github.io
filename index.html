@@ -27,7 +27,7 @@ p {
     <div>
       <p>City Simulator</p>
     </div>
-    <canvas id="myCanvas" width="800" height="800" style="border:1px solid #d3d3d3;">
+    <canvas onmousedown="mDown()" id="myCanvas" width="800" height="800" style="border:1px solid #d3d3d3;">
         Your browser does not support the HTML5 canvas tag.</canvas>
     <script>
             /************
@@ -75,6 +75,9 @@ p {
 
 
                 }   
+            }
+            function mDown() {
+                tiles[Math.floor(Math.random() * (tiles.length - 1))].colour = "Yellow";
             }
 
 </script>
