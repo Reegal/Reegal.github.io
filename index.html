@@ -77,7 +77,9 @@ p {
                 }   
             }
             function mDown() {
-                tiles[Math.floor(Math.random() * (tiles.length - 1))].colour = "Yellow";
+              var tempNum = Math.floor(Math.random() * (tiles.length - 1))
+                tiles[tempNum].colour = "Yellow";
+                tiles[tempNum].draw();
             }
 
 </script>
