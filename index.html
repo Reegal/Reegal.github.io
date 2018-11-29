@@ -4,16 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Card-Jitsu</title>
-  <style>
-      canvas {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 800px;
-}            
-
+  <style>           
 p {
     text-align:center;
     font-family:'Arial';
@@ -37,9 +28,6 @@ p {
 				this.type = type;
 				this.power = power;
 			};
-
-			var c=document.getElementById("myCanvas");
-			var ctx=c.getContext("2d");
 			var groundColour = ["Aquamarine", "BlueViolet", "Crimson", "LightCoral", "Maroon"];
 
 			/**************
@@ -61,15 +49,11 @@ p {
 				body.appendChild(button);
 				buttons[i].addEventListener ("click", function() {
 				alert(hand[i].type + " " + hand[i].power);
+				});
 			}
 			
-
 			
 			
-
-			// 3. Add event handler
-			
-			});
 
 
 </script>
