@@ -43,9 +43,12 @@ p {
 			
 			for(var i=0; i < hand.length; i++){
 				buttons[i] = document.createElement("button");
+				
 				buttons[i].innerHTML = hand[i].type + " " + hand[i].power;
+				
 				var body = document.getElementsByTagName("body")[0];
 				body.appendChild(buttons[i]);
+				
 				buttons[i].addEventListener ("click", function() {
 				alert(hand[i].type + " " + hand[i].power);
 				});
