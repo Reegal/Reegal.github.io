@@ -28,7 +28,6 @@ p {
 				this.type = type;
 				this.power = power;
 			};
-			var groundColour = ["Aquamarine", "BlueViolet", "Crimson", "LightCoral", "Maroon"];
 
 			/**************
 			*  MAIN PROGRAM
@@ -46,7 +45,7 @@ p {
 				buttons[i] = document.createElement("button");
 				buttons[i].innerHTML = hand[i].type + " " + hand[i].power;
 				var body = document.getElementsByTagName("body")[0];
-				body.appendChild(button);
+				body.appendChild(buttons[i]);
 				buttons[i].addEventListener ("click", function() {
 				alert(hand[i].type + " " + hand[i].power);
 				});
