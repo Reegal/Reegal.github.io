@@ -25,64 +25,55 @@ p {
   </head>
   <body>     
     <div>
-      <p>City Simulator</p>
+      <p>Card-Jitsu</p>
     </div>
-    <canvas onmousedown="mDown()" id="myCanvas" width="800" height="800" style="border:1px solid #d3d3d3;">
+		
+		
+    <canvas id="myCanvas" width="800" height="800" style="border:1px solid #d3d3d3;">
         Your browser does not support the HTML5 canvas tag.</canvas>
     <script>
             /************
             * CREATING OBJECTS 
             *************/
 
-            var Tile = function(x, y, colour) {
-              this.x = x;
-              this.y = y;
-              this.colour = colour;
-            };
+			var Card = function(type, power) {
+				this.type = type;
+				this.power = power;
+			};
 
-            Tile.prototype.draw = function() {
-              ctx.beginPath();
-              ctx.strokeStyle="black";
-              ctx.lineWidth="2";
-              ctx.rect(this.x, this.y, 20, 20);
-              ctx.stroke();
-              ctx.fillStyle = this.colour;
-              ctx.fill();
-            };
+			var c=document.getElementById("myCanvas");
+			var ctx=c.getContext("2d");
+			var groundColour = ["Aquamarine", "BlueViolet", "Crimson", "LightCoral", "Maroon"];
 
+			/**************
+			*  MAIN PROGRAM
+			***************/
 
-            var c=document.getElementById("myCanvas");
-            var ctx=c.getContext("2d");
-            var groundColour = ["Aquamarine", "BlueViolet", "Crimson", "LightCoral", "Maroon"];
+			var hand = [];
 
-            /**************
-            *  MAIN PROGRAM
-            ***************/
+			for(var i=0; i < 4; i++){
+				hand[i] = Card("water", 10);
+			}
 
-            var tiles = [];
+			var buttons = [];
+			
+			for(var i=0; i < hand.length; i++){
+				buttons[i] = document.createElement("button");
+				buttons[i].innerHTML = hand[i].type + " " + hand[i].power;
+				var body = document.getElementsByTagName("body")[0];
+				body.appendChild(button);
+				buttons[i].addEventListener ("click", function() {
+				alert(hand[i].type + " " + hand[i].power);
+			}
+			
 
-            var tempColour;
+			
+			
 
-            for (var i = 0; i < 800; i += 20) {
-                for (var j = 0; j < 800; j += 20) {
+			// 3. Add event handler
+			
+			});
 
-                    tempColour = groundColour[Math.floor(Math.random() * 5)];
-                    tiles.push(
-                      new Tile(i, j, tempColour)
-                    );
-
-                    tiles[tiles.length - 1].draw();
-
-
-                }   
-            }
-            function mDown() {
-              var tempNum = Math.floor(Math.random() * (tiles.length - 1))
-              console.log("weq");
-                tiles[tempNum].colour = "Yellow";
-                tiles[tempNum].draw();
-              alert("Will is cool guy");
-            }
 
 </script>
   </body>
