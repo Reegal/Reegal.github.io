@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Card-Jitsu</title>
-  <style>           
-p {
-    text-align:center;
-    font-family:'Arial';
-    font-size: larger;
-    font-style: oblique;
-    font-weight: bold;
-    }
-    </style>
-  </head>
-  <body>     
-    <div>
-      <p>Card-Jitsu</p>
-    </div>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Card-Jitsu</title>
+	<style>           
+		p {
+	text-align:center;
+	font-family:'Arial';
+	font-size: larger;
+	font-style: oblique;
+	font-weight: bold;
+		}
+	</style>
+	</head>
+	<body>     
+		<div>
+			<p>Card-Jitsu</p>
+		</div>
 		
-    <script>
-            /************
-            * CREATING OBJECTS 
-            *************/
-
+		<script>
+	    
+			//creating card function to allow new cards to be made
 			var Card = function(type, power) {
 				this.type = type;
 				this.power = power;
 			};
+			
+			powers = ["water", "snow", "fire"];
 
-			/**************
-			*  MAIN PROGRAM
-			***************/
 
-			var hand = [];
+			var playerHand = [];
 
-			for(var i=0; i < 4; i++){
-				hand[i] = new Card("water", 10);
+			for(var i=0; i < 6; i++){
+				playerHand[i] = new Card(powers[Math.floor(Math.random() * 3)], Math.floor((Math.random() * 12) + 1));
 			}
 
 			var buttons = [];
 			
-			for(var i=0; i < hand.length; i++){
+			for(var i=0; i < playerHand.length; i++){
 				buttons[i] = document.createElement("button");
 				
-				buttons[i].innerHTML = hand[i].type + " " + hand[i].power;
+				buttons[i].innerHTML = playerHand[i].type + " " + playerHand[i].power;
 				
-				var body = document.getElementsByTagName("body")[0];
+				var body = document.getElementsByTagName("body")[2];
 				body.appendChild(buttons[i]);
-				
-				alert("wqe");
+
 				buttons[i].addEventListener ("click", function() {
-				alert("ewqe");
-				alert(hand[i].type + " " + hand[i].power);
+					alert(playerHand[i].type + " " + playerHand[i].power);
 				});
 			}
 			
