@@ -1,86 +1,43 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<title>Card-Jitsu</title>
-	<style>           
-		p {
-			text-align:center;
-			font-family:'Arial';
-			font-size: larger;
-			font-style: oblique;
-			font-weight: bold;
-		}
-    card {
-			background-color: #4CAF50; /* Green */
-			border: thick solid green;
-			color: white;
-			text-align: right;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			margin: 4px 2px;
-			cursor: pointer;
-			width:  150px;
-			height: 250px;
-      float: left;
-		}
-			
-	</style>
-	</head>
-	<body>     
-		<div id = "dd">
-			<p>Card-Jitsu</p>
-		</div>
-		
-		<script>
-	    
-			//creating card function to allow new cards to be made
-			var Card = function(type, power) {
-				this.type = type;
-				this.power = power;
-			};
-			
-			powers = ["water", "snow", "fire"];
-
-
-			var playerHand = [];
-
-			for(var i=0; i < 6; i++){
-				playerHand[i] = new Card(powers[Math.floor(Math.random() * 3)], Math.floor((Math.random() * 12) + 1));
-			}
-
-			var playerCards = [];
-			
-			for(var i=0; i < playerHand.length; i++){
-				playerCards[i] = document.createElement("card");
-
-				playerCards[i].innerHTML = playerHand[i].type + " " + playerHand[i].power;
-				
-				var body = document.body;
-				body.appendChild(playerCards[i]);
+    <head>
+        <title>Reegal's Programs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div {
+              background:honeydew;
+              position:absolute;
+              color:black;
+              top:50%;
+              left:50%;
+              padding:15px;
+              -ms-transform: translateX(-50%) translateY(-50%);
+              -webkit-transform: translate(-50%,-50%);
+              transform: translate(-50%,-50%);
+            } 
+            
+            a {
+                
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div>
+            <p>This is the hub of Reegal's Program</p>
+          <ul>
+              <li><a href="https://reegal.github.io/card-jitsu/index.html">Card Jitsu</a></li>
+          </ul>  
+            
+        </div>
         
-				
-			}
-          var c = document.body.children;
-          var txt = "";
-          var i;
-          for (i = 0; i < c.length; i++) {
-              txt = txt + c[i].tagName + "<br>\n";
-          }
 
-          console.log(txt);
-          playerCards[1].addEventListener ("click", function() {
-          console.log(playerCards[1]);
-          playerCards[1].style.border = "thick solid red"
+    </body>
 
-				});
-			
-			
-			
-
-
-</script>
-  </body>
 </html>
