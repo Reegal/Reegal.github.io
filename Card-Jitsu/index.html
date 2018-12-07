@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Card-Jitsu</title>
+	<style>           
+		p {
+			text-align:center;
+			font-family:'Arial';
+			font-size: larger;
+			font-style: oblique;
+			font-weight: bold;
+		}
+    card {
+			background-color: #4CAF50; /* Green */
+			border: thick solid green;
+			color: white;
+			text-align: right;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			width:  150px;
+			height: 250px;
+      float: left;
+		}
+			
+	</style>
+	</head>
+	<body>     
+		<div id = "dd">
+			<p>Card-Jitsu</p>
+		</div>
+		
+		<script>
+	    
+			//creating card function to allow new cards to be made
+			var Card = function(type, power) {
+				this.type = type;
+				this.power = power;
+			};
+			
+			powers = ["water", "snow", "fire"];
+
+
+			var playerHand = [];
+
+			for(var i=0; i < 6; i++){
+				playerHand[i] = new Card(powers[Math.floor(Math.random() * 3)], Math.floor((Math.random() * 12) + 1));
+			}
+
+			var playerCards = [];
+			
+			for(var i=0; i < playerHand.length; i++){
+				playerCards[i] = document.createElement("card");
+
+				playerCards[i].innerHTML = playerHand[i].type + " " + playerHand[i].power;
+				
+				var body = document.body;
+				body.appendChild(playerCards[i]);
+        
+				
+			}
+          var c = document.body.children;
+          var txt = "";
+          var i;
+          for (i = 0; i < c.length; i++) {
+              txt = txt + c[i].tagName + "<br>\n";
+          }
+
+          console.log(txt);
+          playerCards[1].addEventListener ("click", function() {
+          console.log(playerCards[1]);
+          playerCards[1].style.border = "thick solid red"
+
+				});
+			
+			
+			
+
+
+</script>
+  </body>
+</html>
