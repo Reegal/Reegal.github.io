@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -27,13 +28,30 @@
 			height: 250px;
       float: left;
 		}
-			
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
 	</style>
 	</head>
 	<body>     
-		<div id = "dd">
+		<div>
 			<p>Card-Jitsu</p>
+      <button class = "button">Submit Card</button>
+      
 		</div>
+
+    <div></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div></div>
 		
 		<script>
 	    
@@ -45,6 +63,7 @@
 			
 			powers = ["water", "snow", "fire"];
 
+      var userDiv = document.getElementsByTagName("div")[1];
 
 			var playerHand = [];
 
@@ -59,24 +78,36 @@
 
 				playerCards[i].innerHTML = playerHand[i].type + " " + playerHand[i].power;
 				
-				var body = document.body;
-				body.appendChild(playerCards[i]);
+				
+				userDiv.appendChild(playerCards[i]);
         
 				
 			}
-          var c = document.body.children;
-          var txt = "";
-          var i;
-          for (i = 0; i < c.length; i++) {
-              txt = txt + c[i].tagName + "<br>\n";
-          }
 
-          console.log(txt);
-          playerCards[1].addEventListener ("click", function() {
-          console.log(playerCards[1]);
-          playerCards[1].style.border = "thick solid red"
+      var compDiv = document.getElementsByTagName("div")[2];
 
-				});
+      var compCard = document.createElement("card");
+
+      compDiv.appendChild(compCard);
+
+
+      var selected = -1;
+
+
+      //adding event listeners
+      playerCards.forEach(function (element, index){
+        element.addEventListener("click", function() {
+
+        for (var i = 0; i < 6; i++){
+          playerCards[i].style.border = "thick solid green"
+        }
+
+        playerCards[index].style.border = "thick solid red"
+
+        selected = index; 
+      });
+    });
+          
 			
 			
 			
