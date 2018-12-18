@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,6 +16,9 @@
 			font-weight: bold;
 		}
     card {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
 			background-color: #4CAF50; /* Green */
 			border: thick solid green;
 			color: white;
@@ -43,32 +47,47 @@
 	</style>
 	</head>
 	<body>     
-		<div>
-			<p>Card-Jitsu</p>
-      <button class = "button">Submit Card</button>
-      
-		</div>
+		<p>Card-Jitsu</p>
+    <button class = "button">Submit Card</button>
+    <table style="width=5%">
+      <tr> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
 
-    <div></div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div></div>
-		
 		<script>
-	    
+      function randInt(a, b){
+        return a + Math.floor(Math.random() * (b - a + 1));
+      }
+
+
 			//creating card function to allow new cards to be made
 			var Card = function(type, power) {
 				this.type = type;
 				this.power = power;
+        if(type == "fire"){
+          this.img = "url('https://vignette.wikia.nocookie.net/clubpenguin/images/9/9e/CardJitsuFire_Logo.png/revision/latest/')";
+        }else if(type == "snow"){
+          this.img = "url('https://vignette.wikia.nocookie.net/clubpenguin/images/a/a0/CardJitsuSnow.PNG/revision/latest/')";
+        }else{
+          this.img = "url('https://vignette.wikia.nocookie.net/clubpenguin/images/e/e5/CardJitsuWater_Logo.png/revision/latest/')";
+        }
 			};
 			
 			powers = ["water", "snow", "fire"];
-
-      var userDiv = document.getElementsByTagName("div")[1];
+      
 
 			var playerHand = [];
 
 			for(var i=0; i < 6; i++){
-				playerHand[i] = new Card(powers[Math.floor(Math.random() * 3)], Math.floor((Math.random() * 12) + 1));
+				playerHand[i] = new Card(powers[randInt(0,2)], randInt(1,12));
 			}
 
 			var playerCards = [];
@@ -76,19 +95,19 @@
 			for(var i=0; i < playerHand.length; i++){
 				playerCards[i] = document.createElement("card");
 
-				playerCards[i].innerHTML = playerHand[i].type + " " + playerHand[i].power;
+				playerCards[i].innerHTML = playerHand[i].power;
+
+        console.log(playerHand[i].img);
+        playerCards[i].style.backgroundImage = playerHand[i].img;
 				
-				
-				userDiv.appendChild(playerCards[i]);
+				document.getElementsByTagName("td")[i].appendChild(playerCards[i]);
         
 				
 			}
 
-      var compDiv = document.getElementsByTagName("div")[2];
-
       var compCard = document.createElement("card");
 
-      compDiv.appendChild(compCard);
+      document.getElementsByTagName("td")[6].appendChild(compCard);
 
 
       var selected = -1;
