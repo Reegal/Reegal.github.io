@@ -1,55 +1,18 @@
-
-
 <!DOCTYPE html>
 <html>
 	<head>
+    <link href="style.css" rel="stylesheet"/>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<title>Card-Jitsu</title>
-	<style>           
-		p {
-			text-align:center;
-			font-family:'Arial';
-			font-size: larger;
-			font-style: oblique;
-			font-weight: bold;
-		}
-    card {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-			background-color: #4CAF50; /* Green */
-			border: thick solid green;
-			color: white;
-			text-align: right;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			margin: 4px 2px;
-			cursor: pointer;
-			width:  150px;
-			height: 250px;
-      float: left;
-		}
-    button {
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-	</style>
 	</head>
 	<body>     
 		<p>Card-Jitsu</p>
     <button class = "button" onclick="submitCard()">Submit Card</button>
     <table style="width=5%">
       <tr> 
+        <!--Table containers for players hands
+          -->
         <td></td>
         <td></td>
         <td></td>
@@ -60,145 +23,7 @@
       <tr>
         <td></td>
       </tr>
-
-		<script>
-      function randInt(a, b){
-        return a + Math.floor(Math.random() * (b - a + 1));
-      }
-      
-      function submitCard(){
-        if (selected==-1){
-          alert("You have not selected a card, click on one of the flipped cards to select it");
-        }else{
-          fillCompCard();
-          alert(evaluateCards(playerHand[selected], compHand));
-          //emptyCompCard();
-        }
-      }
-
-      function refreshCard(index){
-        playerHand[index] = new Card(powers[randInt(0,2)], randInt(1,12));
-
-
-        playerCards[index].innerHTML = playerHand[index].power;
-
-        playerCards[index].style.backgroundImage = playerHand[index].img;
-      }
-
-      function fillCompCard(){
-        compHand = new Card(powers[randInt(0,2)], randInt(1,12));
-
-        compCard.innerHTML = compHand.power;
-
-        compCard.style.backgroundImage = compHand.img;
-      }
-
-      function emptyCompCard(){
-        compCard.innerHTML = "";
-
-        compCard.style.backgroundImage = "";
-      }
-
-      function evaluateCards(pCard, cCard){
-        if(pCard.type==cCard.type){
-            if(playerHand[selected].power>compHand.power){
-              return "Since you had the same type, your power of " + pCard.power + " was greater than the power of the computer which was " + cCard.power + ", you have won!";
-            }else if(playerHand[selected].power<compHand.power){
-              return "Since you had the same type, your power of " + pCard.power + " was less than the power of the computer which was " + cCard.power + ", you have lost!";
-            }else{
-              return "You have the same type and power so it's a tie!";
-            }
-          }
-          if(pCard.type=="fire"){
-              if(cCard.type=="snow"){
-                  return "Since fire beats snow, you win!";
-              }
-              else{
-                  return "Since water beats fire, you lose!";
-              }
-          }
-          if(pCard.type=="water"){
-              if(cCard.type=="fire"){
-                  return "Since water beats fire, you win!";
-              }
-              else{
-                  return "Since snow beats water, you lose!";
-              }
-          }
-          if(pCard.type=="snow"){
-              if(cCard.type=="water"){
-                  return "Since snow beats water, you win!";
-              }
-              else{
-                  return "Since fire beats snow, you lose!";
-              }
-          }
-          
-      }
-			//creating card function to allow new cards to be made
-			var Card = function(type, power) {
-				this.type = type;
-				this.power = power;
-        if(type == "fire"){
-          this.img = "url('https://vignette.wikia.nocookie.net/clubpenguin/images/9/9e/CardJitsuFire_Logo.png/revision/latest/')";
-        }else if(type == "snow"){
-          this.img = "url('https://vignette.wikia.nocookie.net/clubpenguin/images/a/a0/CardJitsuSnow.PNG/revision/latest/')";
-        }else{
-          this.img = "url('https://vignette.wikia.nocookie.net/clubpenguin/images/e/e5/CardJitsuWater_Logo.png/revision/latest/')";
-        }
-			};
-			
-			powers = ["water", "snow", "fire"];
-      
-
-			var playerHand = [];
-
-			for(var i=0; i < 6; i++){
-				playerHand[i] = new Card(powers[randInt(0,2)], randInt(1,12));
-			}
-
-			var playerCards = [];
-			
-			for(var i=0; i < playerHand.length; i++){
-				playerCards[i] = document.createElement("card");
-
-				playerCards[i].innerHTML = playerHand[i].power;
-
-        playerCards[i].style.backgroundImage = playerHand[i].img;
-				
-				document.getElementsByTagName("td")[i].appendChild(playerCards[i]);
-        
-				
-			}
-      var compHand;
-
-      var compCard = document.createElement("card");
-
-      document.getElementsByTagName("td")[6].appendChild(compCard);
-
-
-      var selected = -1;
-
-
-      //adding event listeners
-      playerCards.forEach(function (element, index){
-        element.addEventListener("click", function() {
-
-        for (var i = 0; i < 6; i++){
-          playerCards[i].style.border = "thick solid green"
-        }
-
-        playerCards[index].style.border = "thick solid red"
-
-        selected = index; 
-      });
-    });
-          
-			
-			
-			
-
-
-</script>
+		<script src="script.js">  
+    </script>
   </body>
 </html>
