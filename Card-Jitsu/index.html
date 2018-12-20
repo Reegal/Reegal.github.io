@@ -109,30 +109,31 @@
               return "You have the same type and power so it's a tie!";
             }
           }
-          if(pCard.power=="fire"){
-              if(cCard.power=="snow"){
+          if(pCard.type=="fire"){
+              if(cCard.type=="snow"){
                   return "Since fire beats snow, you win!";
               }
               else{
                   return "Since water beats fire, you lose!";
               }
           }
-          if(pCard.power=="water"){
-              if(cCard.power=="fire"){
+          if(pCard.type=="water"){
+              if(cCard.type=="fire"){
                   return "Since water beats fire, you win!";
               }
               else{
                   return "Since snow beats water, you lose!";
               }
           }
-          if(pCard.power=="snow"){
-              if(cCard.power=="water"){
+          if(pCard.type=="snow"){
+              if(cCard.type=="water"){
                   return "Since snow beats water, you win!";
               }
               else{
                   return "Since fire beats snow, you lose!";
               }
           }
+          
       }
 			//creating card function to allow new cards to be made
 			var Card = function(type, power) {
