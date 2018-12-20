@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -48,7 +47,7 @@
 	</head>
 	<body>     
 		<p>Card-Jitsu</p>
-    <button class = "button">Submit Card</button>
+    <button class = "button" onclick="submitCard()">Submit Card</button>
     <table style="width=5%">
       <tr> 
         <td></td>
@@ -66,8 +65,75 @@
       function randInt(a, b){
         return a + Math.floor(Math.random() * (b - a + 1));
       }
+      
+      function submitCard(){
+        if (selected==-1){
+          alert("You have not selected a card, click on one of the flipped cards to select it");
+        }else{
+          fillCompCard();
+          alert(evaluateCards(playerHand[selected], compHand));
+          //emptyCompCard();
+        }
+      }
+
+      function refreshCard(index){
+        playerHand[index] = new Card(powers[randInt(0,2)], randInt(1,12));
 
 
+        playerCards[index].innerHTML = playerHand[index].power;
+
+        playerCards[index].style.backgroundImage = playerHand[index].img;
+      }
+
+      function fillCompCard(){
+        compHand = new Card(powers[randInt(0,2)], randInt(1,12));
+
+        compCard.innerHTML = compHand.power;
+
+        compCard.style.backgroundImage = compHand.img;
+      }
+
+      function emptyCompCard(){
+        compCard.innerHTML = "";
+
+        compCard.style.backgroundImage = "";
+      }
+
+      function evaluateCards(pCard, cCard){
+        if(pCard.type==cCard.type){
+            if(playerHand[selected].power>compHand.power){
+              return "Since you had the same type, your power of " + pCard.power + " was greater than the power of the computer which was " + cCard.power + ", you have won!";
+            }else if(playerHand[selected].power<compHand.power){
+              return "Since you had the same type, your power of " + pCard.power + " was less than the power of the computer which was " + cCard.power + ", you have lost!";
+            }else{
+              return "You have the same type and power so it's a tie!";
+            }
+          }
+          if(pCard.power=="fire"){
+              if(cCard.power=="snow"){
+                  return "Since fire beats snow, you win!";
+              }
+              else{
+                  return "Since water beats fire, you lose!";
+              }
+          }
+          if(pCard.power=="water"){
+              if(cCard.power=="fire"){
+                  return "Since water beats fire, you win!";
+              }
+              else{
+                  return "Since snow beats water, you lose!";
+              }
+          }
+          if(pCard.power=="snow"){
+              if(cCard.power=="water"){
+                  return "Since snow beats water, you win!";
+              }
+              else{
+                  return "Since fire beats snow, you lose!";
+              }
+          }
+      }
 			//creating card function to allow new cards to be made
 			var Card = function(type, power) {
 				this.type = type;
@@ -97,13 +163,13 @@
 
 				playerCards[i].innerHTML = playerHand[i].power;
 
-        console.log(playerHand[i].img);
         playerCards[i].style.backgroundImage = playerHand[i].img;
 				
 				document.getElementsByTagName("td")[i].appendChild(playerCards[i]);
         
 				
 			}
+      var compHand;
 
       var compCard = document.createElement("card");
 
