@@ -1,9 +1,9 @@
-Akshan, 1
-exhaust, flash
-presstheattack, presenceofmind, legendalacrity, laststand, shieldbash, overgrowth
-AS, AD, HEALTH
-QEQEQ, QEW
-doransblade, healthpotion
+Akshan,1
+exhaust,flash
+presstheattack,presenceofmind,legendalacrity,laststand,shieldbash,overgrowth
+AS,AD,HEALTH
+QEQEQ,QEW
+doransblade,healthpotion
 noonquiver
 immortalshieldbow
 stormrazor
@@ -11,7 +11,7 @@ rapidfirecanon
 berserkersgreaves
 infinityedge
 bloodthirster
-Aphelios, 1
+Aphelios,1
 temp
 temp
 temp
@@ -37,7 +37,7 @@ temp
 temp
 temp
 temp
-Brand, 1
+Brand,1
 temp
 temp
 temp
@@ -50,7 +50,7 @@ temp
 temp
 temp
 temp
-Caityln, 1
+Caityln,1
 temp
 temp
 temp
@@ -63,7 +63,7 @@ temp
 temp
 temp
 temp
-Cassiopeia, 1
+Cassiopeia,1
 temp
 temp
 temp
@@ -76,7 +76,7 @@ temp
 temp
 temp
 temp
-Draven, 1
+Draven,1
 temp
 temp
 temp
@@ -89,7 +89,7 @@ temp
 temp
 temp
 temp
-Ezreal, 1
+Ezreal,1
 temp
 temp
 temp
@@ -102,7 +102,7 @@ temp
 temp
 temp
 temp
-Jhin, 1
+Jhin,1
 temp
 temp
 temp
@@ -115,7 +115,7 @@ temp
 temp
 temp
 temp
-Jinx, 1
+Jinx,1
 temp
 temp
 temp
@@ -128,7 +128,7 @@ temp
 temp
 temp
 temp
-Kaisa, 1
+Kaisa,1
 temp
 temp
 temp
@@ -141,7 +141,7 @@ temp
 temp
 temp
 temp
-Kalista, 1
+Kalista,1
 temp
 temp
 temp
@@ -154,7 +154,7 @@ temp
 temp
 temp
 temp
-Karma, 1
+Karma,1
 temp
 temp
 temp
@@ -167,7 +167,7 @@ temp
 temp
 temp
 temp
-Karthus, 1
+Karthus,1
 temp
 temp
 temp
@@ -180,7 +180,7 @@ temp
 temp
 temp
 temp
-Kindred, 1
+Kindred,1
 temp
 temp
 temp
@@ -193,7 +193,7 @@ temp
 temp
 temp
 temp
-KogMaw, 1
+KogMaw,1
 temp
 temp
 temp
@@ -206,7 +206,7 @@ temp
 temp
 temp
 temp
-Lucian, 1
+Lucian,1
 temp
 temp
 temp
@@ -219,7 +219,7 @@ temp
 temp
 temp
 temp
-MissFortune, 1
+MissFortune,1
 temp
 temp
 temp
@@ -232,7 +232,7 @@ temp
 temp
 temp
 temp
-Quinn, 1
+Quinn,1
 temp
 temp
 temp
@@ -245,7 +245,7 @@ temp
 temp
 temp
 temp
-Samira, 1
+Samira,1
 temp
 temp
 temp
@@ -258,7 +258,7 @@ temp
 temp
 temp
 temp
-Senna, 1
+Senna,1
 temp
 temp
 temp
@@ -271,7 +271,7 @@ temp
 temp
 temp
 temp
-Seraphine, 1
+Seraphine,1
 temp
 temp
 temp
@@ -284,7 +284,7 @@ temp
 temp
 temp
 temp
-Sivir, 1
+Sivir,1
 temp
 temp
 temp
@@ -297,7 +297,7 @@ temp
 temp
 temp
 temp
-Sona, 1
+Sona,1
 temp
 temp
 temp
@@ -310,7 +310,7 @@ temp
 temp
 temp
 temp
-Soraka, 1
+Soraka,1
 temp
 temp
 temp
@@ -323,7 +323,7 @@ temp
 temp
 temp
 temp
-Swain, 1
+Swain,1
 temp
 temp
 temp
@@ -336,7 +336,7 @@ temp
 temp
 temp
 temp
-Tristana, 1
+Tristana,1
 temp
 temp
 temp
@@ -349,7 +349,7 @@ temp
 temp
 temp
 temp
-Twitch, 1
+Twitch,1
 temp
 temp
 temp
@@ -362,7 +362,7 @@ temp
 temp
 temp
 temp
-Varus, 1
+Varus,1
 temp
 temp
 temp
@@ -375,7 +375,7 @@ temp
 temp
 temp
 temp
-Vayne, 1
+Vayne,1
 temp
 temp
 temp
@@ -388,7 +388,7 @@ temp
 temp
 temp
 temp
-Vladimir, 1
+Vladimir,1
 temp
 temp
 temp
@@ -401,7 +401,7 @@ temp
 temp
 temp
 temp
-Xayah, 1
+Xayah,1
 temp
 temp
 temp
@@ -414,7 +414,7 @@ temp
 temp
 temp
 temp
-Yasuo, 1
+Yasuo,1
 temp
 temp
 temp
@@ -427,7 +427,7 @@ temp
 temp
 temp
 temp
-Yuumi, 1
+Yuumi,1
 temp
 temp
 temp
@@ -440,7 +440,7 @@ temp
 temp
 temp
 temp
-Zeri, 1
+Zeri,1
 temp
 temp
 temp
@@ -453,7 +453,7 @@ temp
 temp
 temp
 temp
-Ziggs, 1
+Ziggs,1
 temp
 temp
 temp
