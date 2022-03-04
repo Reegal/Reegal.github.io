@@ -11,7 +11,7 @@ rapidfirecanon
 berserkersgreaves
 infinityedge
 bloodthirster
-Aphelios
+Aphelios, 1
 temp
 temp
 temp
@@ -37,7 +37,7 @@ temp
 temp
 temp
 temp
-Brand
+Brand, 1
 temp
 temp
 temp
@@ -50,7 +50,7 @@ temp
 temp
 temp
 temp
-Caityln
+Caityln, 1
 temp
 temp
 temp
@@ -63,7 +63,7 @@ temp
 temp
 temp
 temp
-Cassiopeia
+Cassiopeia, 1
 temp
 temp
 temp
@@ -76,7 +76,7 @@ temp
 temp
 temp
 temp
-Draven
+Draven, 1
 temp
 temp
 temp
@@ -89,7 +89,7 @@ temp
 temp
 temp
 temp
-Ezreal
+Ezreal, 1
 temp
 temp
 temp
@@ -102,7 +102,7 @@ temp
 temp
 temp
 temp
-Jhin
+Jhin, 1
 temp
 temp
 temp
@@ -115,7 +115,7 @@ temp
 temp
 temp
 temp
-Jinx
+Jinx, 1
 temp
 temp
 temp
@@ -128,7 +128,7 @@ temp
 temp
 temp
 temp
-Kaisa
+Kaisa, 1
 temp
 temp
 temp
@@ -141,7 +141,7 @@ temp
 temp
 temp
 temp
-Kalista
+Kalista, 1
 temp
 temp
 temp
@@ -154,7 +154,7 @@ temp
 temp
 temp
 temp
-Karma
+Karma, 1
 temp
 temp
 temp
@@ -167,7 +167,7 @@ temp
 temp
 temp
 temp
-Karthus
+Karthus, 1
 temp
 temp
 temp
@@ -180,7 +180,7 @@ temp
 temp
 temp
 temp
-Kindred
+Kindred, 1
 temp
 temp
 temp
@@ -193,7 +193,7 @@ temp
 temp
 temp
 temp
-KogMaw
+KogMaw, 1
 temp
 temp
 temp
@@ -206,7 +206,7 @@ temp
 temp
 temp
 temp
-Lucian
+Lucian, 1
 temp
 temp
 temp
@@ -219,7 +219,7 @@ temp
 temp
 temp
 temp
-MissFortune
+MissFortune, 1
 temp
 temp
 temp
@@ -232,7 +232,7 @@ temp
 temp
 temp
 temp
-Quinn
+Quinn, 1
 temp
 temp
 temp
@@ -245,7 +245,7 @@ temp
 temp
 temp
 temp
-Samira
+Samira, 1
 temp
 temp
 temp
@@ -258,7 +258,7 @@ temp
 temp
 temp
 temp
-Senna
+Senna, 1
 temp
 temp
 temp
@@ -271,7 +271,7 @@ temp
 temp
 temp
 temp
-Seraphine
+Seraphine, 1
 temp
 temp
 temp
@@ -284,7 +284,7 @@ temp
 temp
 temp
 temp
-Sivir
+Sivir, 1
 temp
 temp
 temp
@@ -297,7 +297,7 @@ temp
 temp
 temp
 temp
-Sona
+Sona, 1
 temp
 temp
 temp
@@ -310,7 +310,7 @@ temp
 temp
 temp
 temp
-Soraka
+Soraka, 1
 temp
 temp
 temp
@@ -323,7 +323,7 @@ temp
 temp
 temp
 temp
-Swain
+Swain, 1
 temp
 temp
 temp
@@ -336,7 +336,7 @@ temp
 temp
 temp
 temp
-Tristana
+Tristana, 1
 temp
 temp
 temp
@@ -349,7 +349,7 @@ temp
 temp
 temp
 temp
-Twitch
+Twitch, 1
 temp
 temp
 temp
@@ -362,7 +362,7 @@ temp
 temp
 temp
 temp
-Varus
+Varus, 1
 temp
 temp
 temp
@@ -375,7 +375,7 @@ temp
 temp
 temp
 temp
-Vayne
+Vayne, 1
 temp
 temp
 temp
@@ -388,7 +388,7 @@ temp
 temp
 temp
 temp
-Vladimir
+Vladimir, 1
 temp
 temp
 temp
@@ -401,7 +401,7 @@ temp
 temp
 temp
 temp
-Xayah
+Xayah, 1
 temp
 temp
 temp
@@ -414,7 +414,7 @@ temp
 temp
 temp
 temp
-Yasuo
+Yasuo, 1
 temp
 temp
 temp
@@ -427,7 +427,7 @@ temp
 temp
 temp
 temp
-Yuumi
+Yuumi, 1
 temp
 temp
 temp
@@ -440,7 +440,7 @@ temp
 temp
 temp
 temp
-Zeri
+Zeri, 1
 temp
 temp
 temp
@@ -453,7 +453,7 @@ temp
 temp
 temp
 temp
-Ziggs
+Ziggs, 1
 temp
 temp
 temp
