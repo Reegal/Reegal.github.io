@@ -7,7 +7,7 @@ doransblade,healthpotion
 noonquiver
 immortalshieldbow
 stormrazor
-rapidfirecanon
+rapidfirecannon
 berserkersgreaves
 infinityedge
 bloodthirster
