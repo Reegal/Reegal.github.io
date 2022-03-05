@@ -119,7 +119,12 @@ function fillBuild(index, list, buildnum) {
       }
 
     }
-    document.querySelector(".notes").firstElementChild.innerHTML = "Notes: \n" + list[index].builds[buildnum].notes;
+    var text = " Notes:<br>Spell Order: ";
+    for(var i = 0; i < list[index].builds[buildnum].spells.length; i++){
+      text += list[index].builds[buildnum].spells[i] + " ";
+    }
+    text += "<br>" + list[index].builds[buildnum].notes;
+    document.querySelector(".notes").firstElementChild.innerHTML = text;
 
 
     currentRole = list;
