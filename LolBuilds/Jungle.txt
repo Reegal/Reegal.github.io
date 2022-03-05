@@ -1,5 +1,5 @@
 Aatrox,1
-teleport,flash
+smite,flash
 conqueror,triumph,legendtenacity,laststand,magicalfootwear,cosmicinsight
 AD,AD,RESIST
 QEQW,QEW
@@ -11,7 +11,9 @@ seryldasgrudge
 platedsteelcaps
 serpentsfang
 deathsdance
+
 Akali,1
+temp
 temp
 temp
 temp
