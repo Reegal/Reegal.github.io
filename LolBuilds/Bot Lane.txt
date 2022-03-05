@@ -32,8 +32,9 @@ lethaltempo,triumph,legendbloodline,coupdegrace,futuresmarket,approachvelocity
 AS,AD,HEALTH
 WQWE,WQE
 longsword,healthpotion
+noonquiver
 krakenslayer,immortalshieldbow
-esseencereaver
+essencereaver
 lorddominiksregard
 berserkersgreaves
 infinityedge
@@ -52,4 +53,3 @@ zhonyashourglass
 sorcerersshoes
 voidstaff
 rabadonsdeathcap
-
