@@ -1,0 +1,13 @@
+Aatrox,1
+teleport,flash
+conqueror,triumph,legendtenacity,laststand,secondwind,unflinching
+AD,AD,RESIST
+QEW,QEW
+doransshield,healthpotion
+caufieldswarhammer
+divinesunderer
+seryldasgrudge
+steraksgage
+platedsteelcaps
+spiritvisage
+deathsdance

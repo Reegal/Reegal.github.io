@@ -1,0 +1,13 @@
+Alistar,1
+ignite,flash
+aftershock,fontoflife,boneplating,unflinching,hextechflashtraption,futuresmarket
+CDR,RESIST,RESIST
+QWE,QWE
+relicshield,healthpotion
+ionianbootsoflucidity
+evenshroud
+anathemaschains
+knightsvow
+ionianbootsoflucidity
+abyssalmask
+bulwarkofthemountain

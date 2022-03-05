@@ -1,0 +1,13 @@
+Aatrox,1
+teleport,flash
+conqueror,triumph,legendtenacity,laststand,magicalfootwear,cosmicinsight
+AD,AD,RESIST
+QEQW,QEW
+emberknife,refillablepotion
+serrateddirk
+divinesunderer
+youmuusghostblade
+seryldasgrudge
+platedsteelcaps
+serpentsfang
+deathsdance
