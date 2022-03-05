@@ -1,0 +1,336 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300';
+* {
+box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    /* justify-content: left; */
+    /* align-items: center; */
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.collapsible {
+    background-color: #b5a065;
+    color: #ebebeb;
+    cursor: pointer;
+    padding: 1.5rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+.active, .collapsible.hover{
+    background-color: #706136;
+}
+
+.content{
+    background-color: #b0ada5;
+    display: none;
+    overflow: hidden;
+}
+
+.build-container{
+    position: relative;
+    margin: auto;
+    width: 66rem;
+    height: 40rem;
+    background-color: #b0ada5;
+}
+
+.champion-image{
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    background-color: #706136;
+    top: 1rem;
+    left: 1rem;
+}
+
+.summ1{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: #706136;
+    top: 10rem;
+    left: 2rem;
+}
+
+.summ2{
+    position: absolute;
+     
+    width: 2rem;
+    height: 2rem;
+    background-color: #706136;
+    top: 10rem;
+    left: 6rem;
+}
+
+.rune1{
+    position: absolute;
+     
+    width: 7rem;
+    height: 7rem;
+    background-color: honeydew;
+    top: 1.5rem;
+    left: 12rem;
+    border-radius: 50%;
+}
+
+.rune2{
+    position: absolute;
+     
+    width: 4rem;
+    height: 4rem;
+    background-color: #706136;
+    top: 3rem;
+    left: 24rem;
+    border-radius: 50%;
+}
+
+.rune3{
+    position: absolute;
+     
+    width: 4rem;
+    height: 4rem;
+    background-color: #706136;
+    top: 3rem;
+    left: 34rem;
+    border-radius: 50%;
+}
+
+
+.rune4{
+    position: absolute;
+     
+    width: 4rem;
+    height: 4rem;
+    background-color: #706136;
+    top: 3rem;
+    left: 44rem;
+    border-radius: 50%;
+}
+
+.mainruneline{
+    position: absolute;
+    background-color: #706136;
+    width: 31rem;
+    height: 0.5rem;
+    top: 4.75rem;
+    left: 15rem;
+}
+
+.rune5{
+    position: absolute;
+     
+    width: 4rem;
+    height: 4rem;
+    background-color: #706136;
+    top: .5rem;
+    left: 51rem;
+    border-radius: 50%;
+}
+
+.rune6{
+    position: absolute;
+     
+    width: 4rem;
+    height: 4rem;
+    background-color: #706136;
+    top: 5.5rem;
+    left: 51rem;
+    border-radius: 50%;
+}
+
+.sideruneline{
+    position: absolute;
+    background-color: #706136;
+    width: 0.5rem;
+    height: 4rem;
+    top: 4rem;
+    left: 52.75rem;
+}
+
+.item-container-1{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 20rem;  
+    top: 16rem;
+    left: 2rem;
+}
+
+.item-container-2{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 20rem;  
+    top: 16rem;
+    left: 10rem;
+}
+
+
+.item-container-3{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 20rem;  
+    top: 16rem;
+    left: 18rem;
+}
+
+
+.item-container-4{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 20rem;  
+    top: 16rem;
+    left: 26em;
+}
+
+.item-container-5{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 20rem;  
+    top: 16rem;
+    left: 34rem;
+}
+
+
+.item-container-6{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 20rem;  
+    top: 16rem;
+    left: 42rem;
+}
+
+.item-container-7{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 20rem;  
+    top: 16rem;
+    left: 50rem;
+}
+
+.item-container-8{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 20rem;  
+    top: 16rem;
+    left: 58rem;
+}
+
+.shard1{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: honeydew;
+    top: 0.5rem;
+    left: 58rem;
+    border-radius: 50%;
+}
+
+.shard2{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: honeydew;
+    top: 4rem;
+    left: 58rem;
+    border-radius: 50%;
+}
+
+.shard3{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: honeydew;
+    top: 7.5rem;
+    left: 58rem;
+    border-radius: 50%;
+}
+
+
+.notes{
+    position: absolute;
+    border: 3px solid #706136;
+    width: 25rem;
+    height: 5rem;
+    background-color: honeydew;
+    top: 10rem;
+    left: 10rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.build1{
+    position: absolute;
+    border: 3px solid #706136;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: honeydew;
+    top: 1rem;
+    left: 63.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.build2{
+    position: absolute;
+    border: 3px solid #706136;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: honeydew;
+    top: 3rem;
+    left: 63.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.build3{
+    position: absolute;
+    border: 3px solid #706136;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: honeydew;
+    top: 5rem;
+    left: 63.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
