@@ -62,10 +62,9 @@ xhttp.onreadystatechange = function() {
             
           }
         }
-        document.getElementById("b1").addEventListener("click",function (){ fillBuild(currentIndex, currentRole, 0)});
-        document.getElementById("b2").addEventListener("click",function (){ fillBuild(currentIndex, currentRole, 1)});
-        document.getElementById("b3").addEventListener("click",function (){ fillBuild(currentIndex, currentRole, 2)});
+        
         fillBuild(currentIndex, currentRole, 0);
+
       }
       else{
         xhttp.open("GET", "https://raw.githubusercontent.com/Reegal/Reegal.github.io/master/LolBuilds/"+roleText[fileCounter]+".txt", true);
@@ -80,8 +79,15 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "https://raw.githubusercontent.com/Reegal/Reegal.github.io/master/LolBuilds/"+roleText[fileCounter]+".txt", true);
 xhttp.send();
 
+document.getElementById("b1").addEventListener("click",function (){ fillBuild(currentIndex, currentRole, 0)});
+document.getElementById("b2").addEventListener("click",function (){ fillBuild(currentIndex, currentRole, 1)});
+document.getElementById("b3").addEventListener("click",function (){ fillBuild(currentIndex, currentRole, 2)});
+
+
+
 
 function fillBuild(index, list, buildnum) {
+  console.log("hello"+ buildnum);
   if (buildnum < list[index].builds.length){
     document.querySelector(".champion-image").firstElementChild.src = "https://raw.githubusercontent.com/Reegal/Reegal.github.io/master/LolBuilds/assets/" + list[index].name + ".png";
     document.querySelector(".champion-image").firstElementChild.style.width = "100%";
@@ -146,16 +152,16 @@ function readBuild(text, num){
   var buildsList = [];
   array = text.split("\r\n");
   done = false;
-  i=0;
+  var i=0;
   while(!done){
     var champion = new Object();
-    console.log(array[i]);
     var line = array[i];
     splitLine = line.split(",");
     champion.name = splitLine[0];
     champion.builds = [];
     i++;
     for(var j=0; j < parseInt(splitLine[1]); j++){
+      
       var build = new Object();
       build.summs = array[i].split(",");
       i++;
@@ -174,7 +180,7 @@ function readBuild(text, num){
       i++;
       champion.builds.push(build);
     }
-    if (i === array.length - 1){
+    if (i >= array.length - 1){
       done = true;
     }
     buildsList.push(champion);
