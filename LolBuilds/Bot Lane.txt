@@ -69,7 +69,7 @@ rapidfirecannon,runaanshurricane
 bloodthirster
 Into like 4+ melee with lot of tank Champs on enemy team u can go kraken over galeforce and runaans over rfc
 heal,flash
-lethaltempo,presenceofmind,legendbloodline,coupdegrace,futuresmarket,cosmicinsight
+fleetfootwork,presenceofmind,legendbloodline,coupdegrace,futuresmarket,cosmicinsight
 AS,AD,RESIST
 QWE
 longsword,healthpotion
