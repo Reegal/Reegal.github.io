@@ -54,3 +54,30 @@ sorcerersshoes
 voidstaff
 rabadonsdeathcap
 
+Caitlyn,2
+heal,flash
+lethaltempo,presenceofmind,legendbloodline,coupdegrace,futuresmarket,cosmicinsight
+AS,AD,RESIST
+QWE
+longsword,healthpotion
+noonquiver
+galeforce,krakenslayer
+lorddominiksregard
+infinityedge
+berserkersgreaves
+rapidfirecannon,runaanshurricane
+bloodthirster
+Into like 4+ melee with lot of tank Champs on enemy team u can go kraken over galeforce and runaans over rfc
+heal,flash
+lethaltempo,presenceofmind,legendbloodline,coupdegrace,futuresmarket,cosmicinsight
+AS,AD,RESIST
+QWE
+longsword,healthpotion
+noonquiver
+galeforce,krakenslayer
+lorddominiksregard
+infinityedge
+berserkersgreaves
+rapidfirecannon,runaanshurricane
+bloodthirster
+Into like 4+ melee with lot of tank Champs on enemy team u can go kraken over galeforce and runaans over rfc
