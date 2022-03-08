@@ -90,7 +90,7 @@ tearofthegoddess,healthpotion
 lostchapter
 everfrost
 archangelsstaff
-gargoylestoneplate
+gargoylesstoneplate
 shadowflame
 voidstaff
 rabadonsdeathcap
@@ -380,8 +380,8 @@ eclipse
 youmuusghostblade
 guinsoosrageblade
 bootsofswiftness
-rapidfirecannon,runaanshurricane,rfc
-rapidfirecannon,runaanshurricane,rfc
+rapidfirecannon,runaanshurricane,rapidfirecannon
+rapidfirecannon,runaanshurricane,rapidfirecannon
 Last 2 items are pick 2 of 3.
 Seraphine,2
 teleport,flash
