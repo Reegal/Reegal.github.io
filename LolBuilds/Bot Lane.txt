@@ -234,6 +234,8 @@ bloodthirster
 Karma,1
 teleport,flash
 summonaery,manaflowband,transcendence,gatheringstorm,futuresmarket,cosmicinsight
+AS,AD,RESIST
+QEW
 doransring,healthpotion
 lostchapter
 ludenstempest
