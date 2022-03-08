@@ -355,6 +355,7 @@ sheen
 essencereaver
 prowlersclaw
 lorddominiksregard
+ionianbootsoflucidity
 infinityedge
 youmuusghostblade
 
@@ -419,6 +420,7 @@ electrocute,tasteofblood,eyeballcollection,ingenioushunter,presenceofmind,legend
 AD,AD,RESIST
 QWE,WEQ
 doransring,healthpotion
+lostchapter
 ludenstempest
 rabadonsdeathcap
 shadowflame
