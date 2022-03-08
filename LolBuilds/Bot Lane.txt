@@ -656,7 +656,6 @@ rabadonsdeathcap
 staffofflowingwater
 shardoftrueice
 FASTINGONLY
-
 Zeri,1
 exhaust,flash
 fleetfootwork,presenceofmind,legendbloodline,coupdegrace,conditioning,overgrowth
@@ -675,8 +674,7 @@ Ziggs,1
 teleport,flash
 arcanecomet,manaflowband,transcendence,gatheringstorm,magicalfootwear,futuresmarket
 AD,AD,HEALTH
-QWQE
-QEW
+QWQE,QEW
 doransring,healthpotion
 lostchapter
 ludenstempest,liandrysanguish
