@@ -587,7 +587,7 @@ berserkersgreaves
 bloodthirster
 deathsdance
 
-Vladimir,
+Vladimir,1
 ignite,ghost
 summonaery,nimbuscloak,transcendence,scorch,perfecttiming,cosmicinsight
 CDR,AD,HEALTH
