@@ -525,6 +525,7 @@ hailofblades,tasteofblood,eyeballcollection,relentlesshunter,presenceofmind,lege
 AS,AD,HEALTH
 WEQ,EQW
 longsword,healthpotion
+noonquiver
 galeforce
 lorddominiksregard,thecollector
 infinityedge
