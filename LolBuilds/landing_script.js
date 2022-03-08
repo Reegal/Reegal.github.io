@@ -156,6 +156,7 @@ function readBuild(text, num){
   while(!done){
     var champion = new Object();
     var line = array[i];
+    console.log(line);
     splitLine = line.split(",");
     champion.name = splitLine[0];
     champion.builds = [];
