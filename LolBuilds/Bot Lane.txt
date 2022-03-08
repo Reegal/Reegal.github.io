@@ -163,6 +163,7 @@ bootsofswiftness
 infinityedge,lorddominiksregard
 rapidfirecannon,infinityedge
 LDR -> IE -> RFC or RFC -> LDR -> IE
+cleanse,flash
 predator,tasteofblood,eyeballcollection,ingenioushunter,legendbloodline,coupdegrace
 AD,AD,HEALTH
 QWQE,QWE
@@ -176,7 +177,7 @@ infinityedge,lorddominiksregard
 rapidfirecannon,infinityedge
 LDR -> IE -> RFC or RFC -> LDR -> IE
 Jinx,1
-heal.flash
+heal,flash
 lethaltempo,presenceofmind,legendbloodline,coupdegrace,absolutefocus,gatheringstorm
 AS,AD,HEALTH
 QWE
@@ -476,7 +477,7 @@ sorcerersshoes
 zhonyashourglass
 voidstaff
 
-Tristana.1
+Tristana,1
 exhaust,flash
 presstheattack,presenceofmind,legendbloodline,coupdegrace,conditioning,overgrowth
 AS,AD,HEALTH
